@@ -1,24 +1,7 @@
-# app
+# Conversor de moedas
 
-## Project setup
-```
-npm install
-```
+- Um conversor de moedas feito em vue
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Como rodar?
+- Rode um ``git clone https://github.com/ArthurDeveloper/conversor-de-moedas.git`` para baixar o projeto
+- Rode um ``npm run serve`` para rodar o servidor

@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Converter>
+      <Conversion from="Real brasileiro/BRL" to="Dólar americano/USD" />
+      <Conversion from="Real brasileiro/BRL" to="Euro/EUR" />
+      <Conversion from="Real brasileiro/BRL" to="Dólar canadense/CAD" />  
+      <Conversion from="Real brasileiro/BRL" to="Euro/EUR" />
+      <Conversion from="Dólar americano/USD" to="Dólar canadense/CAD" />
+      <Conversion from="Dólar canadense/CAD" to="Euro/EUR" />
+    </Converter>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Converter from './components/Converter';
+import Conversion from './components/Conversion';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Converter,
+    Conversion
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+html, body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  background-image: linear-gradient(90deg, #74b0ed, #2a6bad);
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  overflow-y: hidden;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+
 </style>
